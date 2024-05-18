@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+tier = "8FcfefZgB9dcWPcAo6n3tx494SfjZ2dd4gPyv25w2E3d"
+
+[registry]
+url = "http://127.0.0.1"
+
+[provider]
+cluster = "Localnet"
+wallet = "/root/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
